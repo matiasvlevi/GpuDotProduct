@@ -7,14 +7,14 @@ const b = new Matrix(1,3);
 
 const multiplyMatrix = gpu.createKernel(function(a, b) {
     let sum = 0;
-    for (let i = 0; i < 128; i++) {
+    for (let i = 0; i < 2048; i++) {
         sum += a[this.thread.y][i] * b[i][this.thread.x];
     }
     return sum;
-}).setOutput([128, 128]);
-let am = Matrix.make(128,128);
+}).setOutput([2048, 2048]);
+let am = Matrix.make(2048,2048);
 
-let bm =  Matrix.make(128,128);
+let bm =  Matrix.make(2048,2048);
 a.set(am);
 b.set(bm);
 
