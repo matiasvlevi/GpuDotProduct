@@ -1,0 +1,22 @@
+{
+  "name": "gpudotproduct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasvlevi/GpuDotProduct.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasvlevi/GpuDotProduct/issues"
+  },
+  "homepage": "https://github.com/matiasvlevi/GpuDotProduct#readme",
+  "dependencies": {
+    "gpu.js": "^2.11.2"
+  }
+}
